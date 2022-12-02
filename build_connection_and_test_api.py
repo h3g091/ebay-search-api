@@ -25,7 +25,7 @@ class Ebay_22(object):
                 print(f"Title: {item.title}, Price: {item.sellingStatus.currentPrice.value}")
                 print(f"Condition: {item.condition.conditionDisplayName}")
                 print(f"Buy it now available: {item.listingInfo.buyItNowAvailable}")
-                print(f"Product ID: {item.productId}")
+                #print(f"Product ID: {item.productId}") #dies wird interessant, sobald ich auf der production site bin
             
             assert(response.reply.ack == 'Success')
             assert(type(response.reply.timestamp) == datetime.datetime)
