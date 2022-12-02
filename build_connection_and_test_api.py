@@ -27,6 +27,7 @@ class Ebay_22(object):
                 print(f"Buy it now available: {item.listingInfo.buyItNowAvailable}")
                 #print(f"Product ID: {item.productId}") #dies wird interessant, sobald ich auf der production site bin
             
+            #some basic AssertioError Tests: if not working --> assertionError
             assert(response.reply.ack == 'Success')
             assert(type(response.reply.timestamp) == datetime.datetime)
             assert(type(response.reply.searchResult.item) == list)
