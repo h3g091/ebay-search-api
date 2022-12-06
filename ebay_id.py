@@ -1,23 +1,29 @@
 
-ebay_id = "HeikoLan-searchan-SBX-da27d63e4-e57a2caf"
+#ebay_id = "HeikoLan-searchan-SBX-da27d63e4-e57a2caf"
 
 from ensurepip import version
 #from msilib.schema import AppId
 from urllib import response
+
 import pandas as pd 
+from ebaysdk.finding import Connection as Finding
+from ebaysdk.exception import ConnectionError
+
+
+
 import os
 # dotenv is used to create hidden files .env files - here a .env file contains api_key
 from dotenv import load_dotenv
 
-from ebaysdk.finding import Connection as Finding
-from ebaysdk.exception import ConnectionError
 print('all neccessary module loaded')
 
-print(os.getcwd())
+load_dotenv()
+API_KEY = os.getenv('api_key')
+#
+#  hide id in a .env file
 
-# hide id in a .env file
-APPLICATION_ID = os.environ.get('API_KEY')
-APPLICATION_ID= 'HeikoLan-searchan-SBX-da27d63e4-e57a2caf'
+#APPLICATION_ID = os.environ.get('API_KEY')
+
 print(APPLICATION_ID)
 
 # set deprication for showing
