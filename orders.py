@@ -20,19 +20,3 @@ class Orders:
 
 
 
-
-
-#A = Orders()
-
-#l = A.getOrderAttributes()
-#print(l)
-
-#orders = list()
-#for i in range(5):
-#    new_order = Orders()
-#    orders.append(new_order.getOrderAttributes())
-
-
-#print(len(orders))
-#print(orders)
-
