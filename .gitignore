@@ -1,5 +1,7 @@
 # ignore all files related to apis
 .env
+# and all venv folder
+venv/
 
 # Ignore Mac system files
 .DS_store
