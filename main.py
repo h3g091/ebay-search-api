@@ -1,24 +1,18 @@
 import customerFunctions
 import random
-import pandas
-from IPython import display
+import pandas as pd
+import generateFakeOrders
 import numpy
-A = customerFunctions.Customers("Heiko", "Langer", "1","Street1", "23", "m")
+import productCatalog
 
-#print(A.name)
+numberFake_orders = 50
+orders = generateFakeOrders.GenerateOrders.generateOrders(numberFake_orders)
 
-all_stats = A.getStats()
-print(all_stats)
+catalog = productCatalog.Catalog()
 
-A.addPurchase(250)
+catalog.displayCatalog()
 
-A.addPurchase(random.randint(0,10000))
-
-A.getStats()
-
-import productCatalog 
-
-B = productCatalog.Catalog()
-
-print(B.productCatalog)
-
+ordersDf = pd.DataFrame(orders, columns=['cusID','prodID','tstamp'])
+print(ordersDf)
+# next steps - join df catalog with orders and create a new one that has revenue in it etc and total number of orders..
+print(ordersDf[ordersDf.prodID == 1])

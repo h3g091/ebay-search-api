@@ -10,7 +10,7 @@ class Catalog:
             index= [1,2,3]   
         )
     def displayCatalog(self):
-        display(self.productCatalog)
+        print(self.productCatalog)
 
 
 

@@ -10,5 +10,5 @@ class GenerateOrders():
         return(allOrders)
 
 
-a = GenerateOrders.generateOrders(2)
-print(a)
+
+
