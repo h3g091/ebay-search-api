@@ -2,6 +2,9 @@
 .env
 # and all venv folder
 venv/
-
+ENV_DIR/
 # Ignore Mac system files
 .DS_store
+
+#ignore specific files
+decorator_test.py

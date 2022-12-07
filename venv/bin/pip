@@ -1,4 +1,4 @@
-#!/Users/heiko.langer/python_private_proj/Ebay/venv/bin/python3.9
+#!/Users/heiko.langer/python_private_proj/Ebay/venv/bin/python3.11
 # -*- coding: utf-8 -*-
 import re
 import sys
